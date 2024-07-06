@@ -1,0 +1,51 @@
+<!-- appointment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Received</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Appointment Received</h2>
+        <p>Thank you, <span id="namePlaceholder"></span>, for scheduling your appointment with our team.</p>
+        <p>We look forward to seeing you soon!</p>
+    </div>
+
+    <script>
+        // Fetch the name parameter from the URL (using Express.js req.params)
+        const name = '<%= name %>'; // This syntax is for EJS templating engine
+
+        // Insert the name into the span element
+        const namePlaceholder = document.getElementById('namePlaceholder');
+        if (namePlaceholder) {
+            namePlaceholder.textContent = name;
+        }
+    </script>
+</body>
+</html>

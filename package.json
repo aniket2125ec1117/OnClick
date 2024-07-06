@@ -1,0 +1,28 @@
+{
+  "name": "onclickweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scricpt.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniket2125ec1117/OnClick.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniket2125ec1117/OnClick/issues"
+  },
+  "homepage": "https://github.com/aniket2125ec1117/OnClick#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "mongoose": "^8.4.5",
+    "nodemailer": "^6.9.14",
+    "nodemon": "^3.1.4"
+  }
+}
